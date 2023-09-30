@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhesEstabelecimentoArtesanosActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewArtesanos1"
+                android:layout_width="563dp"
+                android:layout_height="209dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ladoccasa"
+                app:srcCompat="@drawable/ladoccasa" />
+
+            <ImageView
+                android:id="@+id/imageViewArtesanos2"
+                android:layout_width="563dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ladoc1"
+                app:srcCompat="@drawable/ladoc1" />
+
+            <ImageView
+                android:id="@+id/imageViewArtesanos3"
+                android:layout_width="wrap_content"
+                android:layout_height="279dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ladoc2"
+                app:srcCompat="@drawable/ladoc2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:text="O RESTAURANTE ​  Criado pelo experiente Osmânio Luiz Rezende, um dos mais renomados restauranters do Brasil, se apresenta com enfoque na culinária clássica italiana.  ​  A qualidade dos ingredientes utilizados na preparação dos pratos é o ponto central, onde Doc, por sinal, significa Denominação de Origem Controlada, que é um sistema de denominação utilizado para certificar e atestar a qualidade e procedência dos produtos originários da Comunidade Comum Europeia. No mundo gastronômico, DOC é um selo de qualidade inquestionável."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="abrirMapa"
+                android:text="Ver no Mapa" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="abrirSite"
+                android:text="Abrir Site" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="fazerLigacao"
+                android:text="Ligar" />
+
+            <Button
+                android:id="@+id/buttonMenuPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Retornar" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
